@@ -12,3 +12,16 @@
 ## Android :
 
 #### run `npx react-native run-android` with your emulator or physical device.
+
+## Features in the app :
+
+- Login Authentication
+- Profile Screen
+- Time In Screen
+- Enable to take a selfie
+- Open Street Map
+- Get Location (Geolocation)
+- Timesheet Screen
+- Claims Screen
+- Add New Claim Screen
+- Logout
