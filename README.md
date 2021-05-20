@@ -11,4 +11,4 @@
 
 ## Android :
 
-### run `npx react-native run-android` with your emulator or physical device.
+#### run `npx react-native run-android` with your emulator or physical device.
