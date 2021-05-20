@@ -7,8 +7,8 @@ import Geolocation from 'react-native-geolocation-service';
 
 class TimeIn extends Component {
   state = {
-    latitude: null,
-    longitude: null
+    latitude: -7.26214,
+    longitude: 112.73842
   }
 
   componentDidMount() {
