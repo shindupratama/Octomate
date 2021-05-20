@@ -117,6 +117,14 @@ class Claims extends Component {
         <View style={{flex: 0.13, backgroundColor: '#fff'}}>
           <Tabs tabBarUnderlineStyle={{backgroundColor: '#5cb8b2'}}>
             <Tab heading="All" tabStyle={{backgroundColor: '#fff'}} textStyle={{color: '#b5b3b3', fontSize: 12}} activeTabStyle={{backgroundColor: '#fff'}} activeTextStyle={{color: '#5cb8b2', fontWeight: 'normal', fontSize: 12}}>
+              {/* <View style={{flex: 1, marginLeft: 15, marginRight: 15, marginTop: 10}}>
+                <Button small iconRight block style={{backgroundColor: '#f0f0f0'}}>
+                  <View style={{flex: 1, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
+                    <Text style={{color: '#999', }}>Sort by date submitted</Text>
+                    <Icon type="FontAwesome" name='sort' style={{color: '#999'}} />
+                  </View>
+                </Button>
+              </View> */}
             </Tab>
             <Tab heading="Approved" tabStyle={{backgroundColor: '#fff'}} textStyle={{color: '#b5b3b3', fontSize: 12}} activeTabStyle={{backgroundColor: '#fff'}} activeTextStyle={{color: '#5cb8b2', fontWeight: 'normal', fontSize: 12}}>
             </Tab>
