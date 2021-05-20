@@ -11,23 +11,6 @@ class TimeIn extends Component {
     longitude: null
   }
 
-  // componentDidMount() {
-  //   if ( PermissionsAndroid.check(PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION) ) {
-  //     Geolocation.getCurrentPosition(
-  //       (position) => {
-  //         console.log('position', position);
-  //         this.setState({latitude: position.coords.latitude, longitude: position.coords.longitude});
-  //         console.log('lat & long', this.state.latitude, this.state.longitude);
-  //       },
-  //       (error) => {
-  //         // See error code charts below.
-  //         console.log('error geolocation', error.code, error.message);
-  //       },
-  //       { enableHighAccuracy: true, timeout: 15000, maximumAge: 10000 }
-  //     );
-  //   }
-  // }
-
   takePicture = async () => {
     if (this.camera) {
       const options = { quality: 0.5, base64: true };
@@ -51,7 +34,7 @@ class TimeIn extends Component {
         { enableHighAccuracy: true, timeout: 15000, maximumAge: 10000 }
       );
     }
-    
+
     return (
       <View style={{flex: 1, backgroundColor: '#fff'}}>
         <View style={{flex: 1, flexDirection: 'column', backgroundColor: 'black'}}>
