@@ -11,15 +11,7 @@ class TimeIn extends Component {
     longitude: null
   }
 
-  takePicture = async () => {
-    if (this.camera) {
-      const options = { quality: 0.5, base64: true };
-      const data = await this.camera.takePictureAsync(options);
-      console.log(data.uri);
-    }
-  };
-
-  render() {
+  componentDidMount() {
     if ( PermissionsAndroid.check(PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION) ) {
       Geolocation.getCurrentPosition(
         (position) => {
@@ -34,7 +26,17 @@ class TimeIn extends Component {
         { enableHighAccuracy: true, timeout: 15000, maximumAge: 10000 }
       );
     }
+  }
 
+  takePicture = async () => {
+    if (this.camera) {
+      const options = { quality: 0.5, base64: true };
+      const data = await this.camera.takePictureAsync(options);
+      console.log(data.uri);
+    }
+  };
+
+  render() {
     return (
       <View style={{flex: 1, backgroundColor: '#fff'}}>
         <View style={{flex: 1, flexDirection: 'column', backgroundColor: 'black'}}>
@@ -65,9 +67,9 @@ class TimeIn extends Component {
             <TouchableOpacity onPress={this.takePicture.bind(this)} style={{flex: 0, backgroundColor: '#000', borderRadius: 5, padding: 0, paddingHorizontal: 20, alignSelf: 'center', margin: 10}}>
               <Icon type='MaterialIcons' name='camera' style={{color: '#fff', fontSize: 50}} />
             </TouchableOpacity>
-            {this.state.latitude != null && this.state.longitude != null && <TouchableOpacity onPress={() => this.props.navigation.navigate('Map', {lat: this.state.latitude, lng: this.state.longitude})} style={{flex: 0, backgroundColor: '#000', borderRadius: 5, padding: 15, paddingHorizontal: 20, alignSelf: 'center', margin: 10}}>
+            <TouchableOpacity onPress={() => this.props.navigation.navigate('Map', {lat: this.state.latitude, lng: this.state.longitude})} style={{flex: 0, backgroundColor: '#000', borderRadius: 5, padding: 15, paddingHorizontal: 20, alignSelf: 'center', margin: 10}}>
               <Text style={{ fontSize: 18, color: '#fff' }}> Next </Text>
-            </TouchableOpacity>}
+            </TouchableOpacity>
           </View>
         </View>
       </View>
