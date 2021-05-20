@@ -5,7 +5,7 @@
 ## Installation
 
 - Download ZIP file or clone this repository.
-- run `npm install` or `yarn install`, all required components will be installed automatically.
+- run `npm install` or `yarn install`, all required dependencies will be installed automatically.
 
 ## Build and run the app
 
