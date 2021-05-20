@@ -7,7 +7,7 @@
 - Download ZIP file or clone this repository.
 - run `npm install` or `yarn install`, all required components will be installed automatically.
 
-## Build and run the app :
+## Build and run the app
 
 ## Android :
 
