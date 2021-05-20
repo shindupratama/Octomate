@@ -29,7 +29,7 @@
       </activity>
       <meta-data
         android:name="com.google.android.geo.API_KEY"
-        android:value="AIzaSyD1fwMREAgYJeff4k5Hj57c3iwOXDxOex4"/>
+        android:value="AIzaSjYRV58irPn67bdEZqdffOex4bkhg65ff0"/>
       <uses-library android:name="org.apache.http.legacy" android:required="false"/>
     </application>
 </manifest>
